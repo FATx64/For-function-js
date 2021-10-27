@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <script>
+            function prosesfor()
+            {
+
+                var batas = parseInt(document.getElementById("batas").value);
+                
+                tmp="";
+
+                for (i=0;i<batas;i++)
+                {
+                    if (i==3)
+                    {
+                        tmp +="oc";
+                    }
+                    else{
+                        tmp +=i;
+
+                    }
+                      
+                }
+                document.getElementById("hasil").innerHTML = tmp;
+            }
+        </script>
+    </head>
+    <body>
+        
+        <input type="text" id="batas"><br>
+        <input type="button"  value="proses" onclick="prosesfor()"><br>
+
+        <span id="hasil"></span>
+
+
+    </body>
+</html>
